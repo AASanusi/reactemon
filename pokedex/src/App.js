@@ -2,10 +2,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import NavBar from "./components/layout/NavBar";
 import Dashboard from "./components/layout/Dashboard";
-
+import backgroundImage from "./pattern.png";
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ background: `url(${backgroundImage})` }}>
       <NavBar />
       <div className="container">
         <Dashboard />
